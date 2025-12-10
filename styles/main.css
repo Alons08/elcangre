@@ -104,8 +104,8 @@ body {
 }
 
 #cancel-order {
-    background-color: var(--danger-color);
-    color: var(--white);
+    background-color: #7f8c8d;
+    color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 30px;
@@ -116,7 +116,7 @@ body {
 }
 
 #cancel-order:hover {
-    background-color: #c0392b;
+    background-color: #636e72;
 }
 
 /* Section Styles */
