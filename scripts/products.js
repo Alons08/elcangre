@@ -1,16 +1,16 @@
 // Array completo de productos
 const products = [
     // Arroces
-    {id: 1, name: "Arroz con langostinos fuente", category: "arroces", price: 65, description: "Arroz con langostinos frescos y especias.", image: "./images/menu/arroz-langostinos.jpg", available: true},
     {id: 2, name: "Arroz con langostinos personal", category: "arroces", price: 30, description: "Porción personal de arroz con langostinos.", image: "./images/menu/arroz-langostinos.jpg", available: true},
+    {id: 1, name: "Arroz con langostinos fuente", category: "arroces", price: 65, description: "Arroz con langostinos frescos y especias.", image: "./images/menu/arroz-langostinos.jpg", available: true},
     {id: 3, name: "Arroz con choros personal", category: "arroces", price: 30, description: "Arroz con choros y toque de la casa.", image: "./images/menu/arroz-choros.jpg", available: true},
     {id: 4, name: "Arroz con choros fuente", category: "arroces", price: 65, description: "Fuente de arroz con choros frescos.", image: "./images/menu/arroz-choros.jpg", available: true},
-    {id: 5, name: "Arroz con marisco fuente", category: "arroces", price: 60, description: "Arroz con mariscos variados y especias.", image: "./images/menu/arroz-mariscos.jpg", available: true},
     {id: 6, name: "Arroz con marisco personal", category: "arroces", price: 28, description: "Porción personal de arroz con mariscos.", image: "./images/menu/arroz-mariscos.jpg", available: true},
-    {id: 7, name: "Chaufa de pescado fuente", category: "arroces", price: 65, description: "Chaufa de pescado al estilo oriental.", image: "./images/menu/chaufa-pescado.jpg", available: true},
+    {id: 5, name: "Arroz con marisco fuente", category: "arroces", price: 60, description: "Arroz con mariscos variados y especias.", image: "./images/menu/arroz-mariscos.jpg", available: true},
     {id: 8, name: "Chaufa de pescado personal", category: "arroces", price: 30, description: "Porción personal de chaufa de pescado.", image: "./images/menu/chaufa-pescado.jpg", available: true},
-    {id: 9, name: "Chaufa de mariscos fuente", category: "arroces", price: 65, description: "Chaufa de mariscos con verduras.", image: "./images/menu/chaufa-mariscos.jpg", available: true},
+    {id: 7, name: "Chaufa de pescado fuente", category: "arroces", price: 65, description: "Chaufa de pescado al estilo oriental.", image: "./images/menu/chaufa-pescado.jpg", available: true},
     {id: 10, name: "Chaufa de mariscos personal", category: "arroces", price: 30, description: "Porción personal de chaufa de mariscos.", image: "./images/menu/chaufa-mariscos.jpg", available: true},
+    {id: 9, name: "Chaufa de mariscos fuente", category: "arroces", price: 65, description: "Chaufa de mariscos con verduras.", image: "./images/menu/chaufa-mariscos.jpg", available: true},
 
     // Bebidas
     {id: 11, name: "Agua", category: "bebidas", price: 3, description: "Agua embotellada fría.", image: "./images/menu/agua.jpg", available: true},
@@ -33,15 +33,15 @@ const products = [
     {id: 24, name: "Ceviche mixto natural fuente", category: "ceviches", price: 60, description: "Ceviche mixto clásico fuente.", image: "./images/menu/ceviche-mixto.jpg", available: true},
     {id: 26, name: "Ceviche mixto en leche de tigre personal", category: "ceviches", price: 33, description: "Ceviche mixto en leche de tigre.", image: "./images/menu/ceviche-mixto-tigre.jpg", available: true},
     {id: 27, name: "Ceviche mixto en leche de tigre fuente", category: "ceviches", price: 65, description: "Ceviche mixto en leche de tigre fuente.", image: "./images/menu/ceviche-mixto-tigre.jpg", available: true},
-    {id: 28, name: "Ceviche mixto acangrejao fuente", category: "ceviches", price: 70, description: "Ceviche mixto con cangrejo fuente.", image: "./images/menu/ceviche-mixto-acangrejao.jpg", available: true},
     {id: 32, name: "Ceviche mixto acangrejao personal", category: "ceviches", price: 35, description: "Ceviche mixto con cangrejo personal.", image: "./images/menu/ceviche-mixto-acangrejao.jpg", available: true},
+    {id: 28, name: "Ceviche mixto acangrejao fuente", category: "ceviches", price: 70, description: "Ceviche mixto con cangrejo fuente.", image: "./images/menu/ceviche-mixto-acangrejao.jpg", available: true},
     {id: 29, name: "Ceviche mixto tricolor personal", category: "ceviches", price: 55, description: "Ceviche mixto con tres sabores.", image: "./images/menu/ceviche-mixto-tricolor.jpg", available: true},
     {id: 30, name: "Ceviche mixto tricolor fuente", category: "ceviches", price: 90, description: "Ceviche mixto tricolor fuente.", image: "./images/menu/ceviche-mixto-tricolor.jpg", available: true},
     {id: 31, name: "Ceviche mixto de cangrejos personal", category: "ceviches", price: 40, description: "Ceviche mixto con cangrejo personal.", image: "./images/menu/ceviche-mixto-cangrejos.jpg", available: true},
     {id: 35, name: "Ceviche mixto de cangrejos fuente", category: "ceviches", price: 80, description: "Ceviche mixto con cangrejo fuente.", image: "./images/menu/ceviche-mixto-cangrejos.jpg", available: true},
     {id: 33, name: "Causa acevichada", category: "ceviches", price: 28, description: "Causa rellena con ceviche.", image: "./images/menu/causa-acevichada.jpg", available: true},
-    {id: 34, name: "Ceviche de pescado ahuancainado fuente", category: "ceviches", price: 65, description: "Ceviche de pescado con salsa huancaína.", image: "./images/menu/ceviche-pescado-huancainado.jpg", available: true},
     {id: 40, name: "Ceviche de pescado ahuancainado personal", category: "ceviches", price: 32, description: "Ceviche de pescado con salsa huancaína.", image: "./images/menu/ceviche-pescado-huancainado.jpg", available: true},
+    {id: 34, name: "Ceviche de pescado ahuancainado fuente", category: "ceviches", price: 65, description: "Ceviche de pescado con salsa huancaína.", image: "./images/menu/ceviche-pescado-huancainado.jpg", available: true},
     {id: 36, name: "Ceviche mixto ahuancainado personal", category: "ceviches", price: 36, description: "Ceviche mixto con salsa huancaína.", image: "./images/menu/ceviche-mixto-huancainado.jpg", available: true},
     {id: 37, name: "Ceviche mixto ahuancainado fuente", category: "ceviches", price: 70, description: "Ceviche mixto con salsa huancaína fuente.", image: "./images/menu/ceviche-mixto-huancainado.jpg", available: true},
     {id: 38, name: "Ceviche de pescado en crema de rocoto personal", category: "ceviches", price: 32, description: "Ceviche de pescado con crema de rocoto.", image: "./images/menu/ceviche-pescado-rocoto.jpg", available: true},
@@ -53,12 +53,12 @@ const products = [
     {id: 45, name: "Cevimaruchas en crema rocoto", category: "ceviches", price: 30, description: "Cevimaruchas con crema de rocoto.", image: "./images/menu/cevimaruchas-rocoto.jpg", available: true},
 
     // Chicharrones
-    {id: 46, name: "Chicharrón de langostinos fuente", category: "chicharrones", price: 75, description: "Langostinos fritos y crocantes.", image: "./images/menu/chicharron-langostinos.jpg", available: true},
     {id: 47, name: "Chicharrón de langostinos personal", category: "chicharrones", price: 40, description: "Porción personal de langostinos fritos.", image: "./images/menu/chicharron-langostinos.jpg", available: true},
-    {id: 48, name: "Chicharrón de pescado fuente", category: "chicharrones", price: 60, description: "Chicharrón de pescado fuente.", image: "./images/menu/chicharron-pescado.jpg", available: true},
+    {id: 46, name: "Chicharrón de langostinos fuente", category: "chicharrones", price: 75, description: "Langostinos fritos y crocantes.", image: "./images/menu/chicharron-langostinos.jpg", available: true},
     {id: 49, name: "Chicharrón de pescado personal", category: "chicharrones", price: 28, description: "Porción personal de chicharrón de pescado.", image: "./images/menu/chicharron-pescado.jpg", available: true},
-    {id: 50, name: "Chicharrón mixto fuente", category: "chicharrones", price: 60, description: "Chicharrón mixto de mariscos fuente.", image: "./images/menu/chicharron-mixto.jpg", available: true},
+    {id: 48, name: "Chicharrón de pescado fuente", category: "chicharrones", price: 60, description: "Chicharrón de pescado fuente.", image: "./images/menu/chicharron-pescado.jpg", available: true},
     {id: 51, name: "Chicharrón mixto personal", category: "chicharrones", price: 35, description: "Porción personal de chicharrón mixto.", image: "./images/menu/chicharron-mixto.jpg", available: true},
+    {id: 50, name: "Chicharrón mixto fuente", category: "chicharrones", price: 60, description: "Chicharrón mixto de mariscos fuente.", image: "./images/menu/chicharron-mixto.jpg", available: true},
     {id: 52, name: "Chicharrón de pollo", category: "chicharrones", price: 20, description: "Chicharrón de pollo crocante.", image: "./images/menu/chicharron-pollo.jpg", available: true},
 
     // Comida Criolla
