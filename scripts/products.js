@@ -25,6 +25,7 @@ const products = [
     {id: 20, name: "Gaseosa Coca cola 1L", category: "bebidas", price: 8, description: "Coca Cola 1L fría.", image: "./images/menu/gaseosa-coca-1l.jpg", available: true},
 
     // Ceviches
+    {id: 100, name: "Ceviche de pescado natural personal", category: "ceviches", price: 28, description: "Ceviche de pescado fresco.", image: "./images/menu/ceviche-pescado.jpg", available: true},
     {id: 21, name: "Ceviche de pescado natural fuente", category: "ceviches", price: 55, description: "Ceviche de pescado fresco, fuente.", image: "./images/menu/ceviche-pescado.jpg", available: true},
     {id: 22, name: "Ceviche mixto en crema de rocoto personal", category: "ceviches", price: 36, description: "Ceviche mixto con crema de rocoto.", image: "./images/menu/ceviche-mixto-rocot.jpg", available: true},
     {id: 25, name: "Ceviche mixto en crema de rocoto fuente", category: "ceviches", price: 70, description: "Ceviche mixto con crema de rocoto fuente.", image: "./images/menu/ceviche-mixto-rocot.jpg", available: true},
@@ -52,12 +53,12 @@ const products = [
     {id: 45, name: "Cevimaruchas en crema rocoto", category: "ceviches", price: 30, description: "Cevimaruchas con crema de rocoto.", image: "./images/menu/cevimaruchas-rocoto.jpg", available: true},
 
     // Chicharrones
-    {id: 46, name: "Chicharrón de langostinos fuente", category: "chicharrones", price: 75, description: "Langostinos fritos y crocantes.", image: "./images/menu/chicharron-langostinos-fuente.jpg", available: true},
-    {id: 47, name: "Chicharrón de langostinos personal", category: "chicharrones", price: 40, description: "Porción personal de langostinos fritos.", image: "./images/menu/chicharron-langostinos-personal.jpg", available: true},
-    {id: 48, name: "Chicharrón de pescado fuente", category: "chicharrones", price: 60, description: "Chicharrón de pescado fuente.", image: "./images/menu/chicharron-pescado-fuente.jpg", available: true},
-    {id: 49, name: "Chicharrón de pescado personal", category: "chicharrones", price: 28, description: "Porción personal de chicharrón de pescado.", image: "./images/menu/chicharron-pescado-personal.jpg", available: true},
-    {id: 50, name: "Chicharrón mixto fuente", category: "chicharrones", price: 60, description: "Chicharrón mixto de mariscos fuente.", image: "./images/menu/chicharron-mixto-fuente.jpg", available: true},
-    {id: 51, name: "Chicharrón mixto personal", category: "chicharrones", price: 35, description: "Porción personal de chicharrón mixto.", image: "./images/menu/chicharron-mixto-personal.jpg", available: true},
+    {id: 46, name: "Chicharrón de langostinos fuente", category: "chicharrones", price: 75, description: "Langostinos fritos y crocantes.", image: "./images/menu/chicharron-langostinos.jpg", available: true},
+    {id: 47, name: "Chicharrón de langostinos personal", category: "chicharrones", price: 40, description: "Porción personal de langostinos fritos.", image: "./images/menu/chicharron-langostinos.jpg", available: true},
+    {id: 48, name: "Chicharrón de pescado fuente", category: "chicharrones", price: 60, description: "Chicharrón de pescado fuente.", image: "./images/menu/chicharron-pescado.jpg", available: true},
+    {id: 49, name: "Chicharrón de pescado personal", category: "chicharrones", price: 28, description: "Porción personal de chicharrón de pescado.", image: "./images/menu/chicharron-pescado.jpg", available: true},
+    {id: 50, name: "Chicharrón mixto fuente", category: "chicharrones", price: 60, description: "Chicharrón mixto de mariscos fuente.", image: "./images/menu/chicharron-mixto.jpg", available: true},
+    {id: 51, name: "Chicharrón mixto personal", category: "chicharrones", price: 35, description: "Porción personal de chicharrón mixto.", image: "./images/menu/chicharron-mixto.jpg", available: true},
     {id: 52, name: "Chicharrón de pollo", category: "chicharrones", price: 20, description: "Chicharrón de pollo crocante.", image: "./images/menu/chicharron-pollo.jpg", available: true},
 
     // Comida Criolla
@@ -71,28 +72,28 @@ const products = [
     {id: 58, name: "Trio marino", category: "duos-trios", price: 60, description: "Trío de especialidades marinas.", image: "./images/menu/trio-marino.jpg", available: true},
 
     // Para Picar
-    {id: 59, name: "Choritos a la chalaca", category: "parapicar", price: 25, description: "Mejillones con salsa criolla.", image: "./images/menu/choritos-chalaca.jpg", available: true},
+    {id: 59, name: "Choritos a la chalaca", category: "parapicar", price: 25, description: "Mejillones con salsa criolla.", image: "./images/menu/choros-chalaca.jpg", available: true},
     {id: 60, name: "Patita acevichada", category: "parapicar", price: 25, description: "Patita de cerdo en salsa acevichada.", image: "./images/menu/patita-acevichada.jpg", available: true},
     {id: 61, name: "Patita en fríamente", category: "parapicar", price: 15, description: "Patita de cerdo fría y sabrosa.", image: "./images/menu/patita-friamente.jpg", available: true},
 
     // Sopas y Jugosos
-    {id: 62, name: "Parihuela personal", category: "sopas-jugosos", price: 40, description: "Sopa marina con mariscos.", image: "./images/menu/parihuela-personal.jpg", available: true},
-    {id: 63, name: "Parihuela fuente", category: "sopas-jugosos", price: 75, description: "Fuente de parihuela con mariscos.", image: "./images/menu/parihuela-fuente.jpg", available: true},
-    {id: 64, name: "Sudado personal", category: "sopas-jugosos", price: 30, description: "Sudado de pescado personal.", image: "./images/menu/sudado-personal.jpg", available: true},
-    {id: 65, name: "Sudado fuente", category: "sopas-jugosos", price: 55, description: "Fuente de sudado de pescado.", image: "./images/menu/sudado-fuente.jpg", available: true},
+    {id: 62, name: "Parihuela personal", category: "sopas-jugosos", price: 40, description: "Sopa marina con mariscos.", image: "./images/menu/parihuela.jpg", available: true},
+    {id: 63, name: "Parihuela fuente", category: "sopas-jugosos", price: 75, description: "Fuente de parihuela con mariscos.", image: "./images/menu/parihuela.jpg", available: true},
+    {id: 64, name: "Sudado personal", category: "sopas-jugosos", price: 30, description: "Sudado de pescado personal.", image: "./images/menu/sudado.jpg", available: true},
+    {id: 65, name: "Sudado fuente", category: "sopas-jugosos", price: 55, description: "Fuente de sudado de pescado.", image: "./images/menu/sudado.jpg", available: true},
 
     // Otros (mariscos, especiales, etc.)
-    {id: 66, name: "Espaguetis en salsa de marisco", category: "parapicar", price: 35, description: "Espaguetis con salsa de mariscos.", image: "./images/menu/espaguetis-marisco.jpg", available: true},
-    {id: 67, name: "Reventado de cangrejos", category: "parapicar", price: 35, description: "Cangrejos reventados al estilo de la casa.", image: "./images/menu/reventado-cangrejos.jpg", available: true},
+    {id: 66, name: "Espaguetis en salsa de marisco", category: "parapicar", price: 35, description: "Espaguetis con salsa de mariscos.", image: "./images/menu/espaguetis.jpg", available: true},
+    {id: 67, name: "Reventado de cangrejos", category: "parapicar", price: 35, description: "Cangrejos reventados al estilo de la casa.", image: "./images/menu/reventado.jpg", available: true},
     {id: 68, name: "Picante de mariscos", category: "arroces", price: 35, description: "Picante de mariscos con arroz.", image: "./images/menu/picante-mariscos.jpg", available: true},
     {id: 69, name: "Guarnición", category: "parapicar", price: 8, description: "Guarnición para acompañar tus platos.", image: "./images/menu/guarnicion.jpg", available: true},
-    {id: 70, name: "Jalea mixta fuente", category: "parapicar", price: 80, description: "Jalea mixta de mariscos fuente.", image: "./images/menu/jalea-mixta-fuente.jpg", available: true},
-    {id: 71, name: "Jalea mixta personal", category: "parapicar", price: 45, description: "Porción personal de jalea mixta.", image: "./images/menu/jalea-mixta-personal.jpg", available: true},
-    {id: 72, name: "Pescado al ajo personal", category: "parapicar", price: 40, description: "Pescado al ajo porción personal.", image: "./images/menu/pescado-ajo-personal.jpg", available: true},
-    {id: 73, name: "Pescado a lo macho personal", category: "parapicar", price: 40, description: "Pescado a lo macho personal.", image: "./images/menu/pescado-macho-personal.jpg", available: true},
+    {id: 70, name: "Jalea mixta fuente", category: "parapicar", price: 80, description: "Jalea mixta de mariscos fuente.", image: "./images/menu/jalea-mixta.jpg", available: true},
+    {id: 71, name: "Jalea mixta personal", category: "parapicar", price: 45, description: "Porción personal de jalea mixta.", image: "./images/menu/jalea-mixta.jpg", available: true},
+    {id: 72, name: "Pescado al ajo personal", category: "parapicar", price: 40, description: "Pescado al ajo porción personal.", image: "./images/menu/pescado-ajo.jpg", available: true},
+    {id: 73, name: "Pescado a lo macho personal", category: "parapicar", price: 40, description: "Pescado a lo macho personal.", image: "./images/menu/pescado-macho.jpg", available: true},
     {id: 74, name: "Brujería marina", category: "parapicar", price: 35, description: "Especialidad marina de la casa.", image: "./images/menu/brujeria-marina.jpg", available: true},
-    {id: 75, name: "Tacu tacu en salsa de marino", category: "arroces", price: 35, description: "Tacu tacu con salsa de mariscos.", image: "./images/menu/tacu-tacu-marino.jpg", available: true},
-    {id: 76, name: "Chilcano", category: "sopas-jugosos", price: 15, description: "Chilcano de pescado tradicional.", image: "./images/menu/chilcano.jpg", available: true}
+    {id: 75, name: "Tacu tacu en salsa de marino", category: "arroces", price: 35, description: "Tacu tacu con salsa de mariscos.", image: "./images/menu/tacutacu-marino.jpg", available: true},
+    {id: 76, name: "Chilcano", category: "sopas-jugosos", price: 15, description: "Chilcano de pescado tradicional.", image: "./images/menu/chilcano-pescado.jpg", available: true}
 ];
 
 // Hacer el array accesible globalmente
