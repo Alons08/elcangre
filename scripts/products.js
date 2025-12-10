@@ -98,7 +98,7 @@ const products = [
 // Hacer el array accesible globalmente
 window.restaurantProducts = products;
 
-function renderProducts(category = 'comidas') {
+function renderProducts(category = 'arroces') {
     const menuItemsContainer = document.getElementById('menu-items');
     if (!menuItemsContainer) return;
 
