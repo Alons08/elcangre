@@ -205,7 +205,7 @@ function setupProductEvents() {
 }
 
 function initProducts() {
-    renderProducts('comidas');
+    renderProducts('ceviches');
     setupFilters();
     setupProductEvents();
 }
