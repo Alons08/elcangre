@@ -65,7 +65,7 @@ const products = [
     {id: 53, name: "Lomo saltado", category: "criolla", price: 25, description: "Lomo saltado clásico con papas.", image: "./images/menu/lomo-saltado.jpg", available: true},
     {id: 54, name: "Guisada", category: "criolla", price: 20, description: "Guiso criollo tradicional.", image: "./images/menu/guisada.jpg", available: true},
     {id: 55, name: "Combinado simple", category: "criolla", price: 10, description: "Combinado de arroz y guiso.", image: "./images/menu/combinado-simple.jpg", available: true},
-    {id: 56, name: "Combinado con patita", category: "criolla", price: 15, description: "Combinado con patita de cerdo.", image: "./images/menu/combinado-patita.jpg", available: true},
+    {id: 56, name: "Combinado con patita de fiambre", category: "criolla", price: 15, description: "Combinado con patita de cerdo.", image: "./images/menu/combinado-patita.jpg", available: true},
 
     // Duos y Trios
     {id: 57, name: "Duo marino", category: "duos-trios", price: 45, description: "Dúo de platos marinos favoritos.", image: "./images/menu/duo-marino.jpg", available: true},
