@@ -74,7 +74,7 @@ const products = [
     // Para Picar
     {id: 59, name: "Choritos a la chalaca", category: "parapicar", price: 25, description: "Mejillones con salsa criolla.", image: "./images/menu/choros-chalaca.jpg", available: true},
     {id: 60, name: "Patita acevichada", category: "parapicar", price: 25, description: "Patita de cerdo en salsa acevichada.", image: "./images/menu/patita-acevichada.jpg", available: true},
-    {id: 61, name: "Patita en fríamente", category: "parapicar", price: 15, description: "Patita de cerdo fría y sabrosa.", image: "./images/menu/patita-friamente.jpg", available: true},
+    {id: 61, name: "Patita en fiambre", category: "parapicar", price: 15, description: "Patita de cerdo fría y sabrosa.", image: "./images/menu/patita-friamente.jpg", available: true},
 
     // Sopas y Jugosos
     {id: 62, name: "Parihuela personal", category: "sopas-jugosos", price: 40, description: "Sopa marina con mariscos.", image: "./images/menu/parihuela.jpg", available: true},
