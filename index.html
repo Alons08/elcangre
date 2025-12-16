@@ -155,15 +155,6 @@
                         <input type="tel" id="customer-phone" required>
                     </div>
                     <div class="form-group">
-                        <label for="delivery-payment">Tipo de Pago *</label>
-                        <div class="radio-group">
-                            <label><input type="radio" name="delivery-payment" value="Efectivo" required> Efectivo</label>
-                            <label><input type="radio" name="delivery-payment" value="Yape"> Yape</label>
-                            <label><input type="radio" name="delivery-payment" value="Plin"> Plin</label>
-                            <label><input type="radio" name="delivery-payment" value="Otro"> Tarjeta</label>
-                        </div>
-                    </div>
-                    <div class="form-group">
                         <label for="delivery-type">Tipo de Entrega *</label>
                         <select id="delivery-type" required>
                             <option value="">Seleccionar</option>
@@ -187,6 +178,15 @@
                             <label for="pickup-notes">Observaciones</label>
                             <textarea id="pickup-notes" rows="2"></textarea>
                         </div>
+                        <div class="form-group">
+                            <label for="delivery-payment">Tipo de Pago *</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="delivery-payment" value="Efectivo" required> Efectivo</label>
+                                <label><input type="radio" name="delivery-payment" value="Yape"> Yape</label>
+                                <label><input type="radio" name="delivery-payment" value="Plin"> Plin</label>
+                                <label><input type="radio" name="delivery-payment" value="Otro"> Tarjeta</label>
+                            </div>
+                        </div>
                     </div>
                     
                     <!-- Campos para Delivery -->
@@ -198,6 +198,13 @@
                         <div class="form-group">
                             <label for="delivery-notes">Observaciones</label>
                             <textarea id="delivery-notes" rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="delivery-payment">Tipo de Pago *</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="delivery-payment" value="Yape" required> Yape</label>
+                            </div>
+                            <div class="info-message" style="font-size: 0.95em; color: #007bff; margin-top: 4px;">Solo se acepta pago por Yape para delivery.</div>
                         </div>
                     </div>
                 </form>
