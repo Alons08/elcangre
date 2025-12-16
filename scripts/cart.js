@@ -363,12 +363,20 @@ function validateForm() {
     // Validar método de pago
     const paymentSelected = form.querySelector('input[name="delivery-payment"]:checked');
     if (!paymentSelected) {
-        const paymentGroup = document.querySelector('.form-group:nth-child(3)');
-        paymentGroup.classList.add('invalid');
-        const errorMsg = document.createElement('div');
-        errorMsg.className = 'error-message';
-        errorMsg.textContent = 'Por favor selecciona el método de pago';
-        paymentGroup.appendChild(errorMsg);
+        // Buscar el grupo correcto según el tipo de entrega
+        let paymentGroup = null;
+        if (deliveryType === 'pickup') {
+            paymentGroup = document.querySelector('#pickup-fields .form-group');
+        } else if (deliveryType === 'delivery') {
+            paymentGroup = document.querySelector('#delivery-fields .form-group');
+        }
+        if (paymentGroup) {
+            paymentGroup.classList.add('invalid');
+            const errorMsg = document.createElement('div');
+            errorMsg.className = 'error-message';
+            errorMsg.textContent = 'Por favor selecciona el método de pago';
+            paymentGroup.appendChild(errorMsg);
+        }
         isValid = false;
     }
 
