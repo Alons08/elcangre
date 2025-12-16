@@ -111,18 +111,19 @@ function setupDeliveryToggle() {
                 setTimeout(() => {
                     cartElements.pickupFields.scrollIntoView({ behavior: 'smooth', block: 'end' });
                 }, 100);
-                // Habilitar todos los métodos de pago
+                // Habilitar todos los métodos de pago y deseleccionar todos
                 document.querySelectorAll('input[name="delivery-payment"]').forEach(input => {
                     input.disabled = false;
                     input.parentElement.style.display = '';
+                    input.checked = false;
                 });
             } else if (deliveryType === 'delivery') {
                 cartElements.deliveryFields.classList.add('active');
                 setTimeout(() => {
                     cartElements.deliveryFields.scrollIntoView({ behavior: 'smooth', block: 'end' });
                 }, 100);
-                // Solo permitir Yape para delivery y seleccionarlo por defecto
-                document.querySelectorAll('#delivery-fields input[name="delivery-payment"]').forEach(input => {
+                // Solo permitir Yape para delivery y seleccionarlo automáticamente
+                document.querySelectorAll('input[name="delivery-payment"]').forEach(input => {
                     if (input.value !== 'Yape') {
                         input.disabled = true;
                         input.checked = false;
@@ -134,10 +135,11 @@ function setupDeliveryToggle() {
                     }
                 });
             } else {
-                // Si no hay selección, mostrar todos los métodos
+                // Si no hay selección, mostrar todos los métodos y deseleccionar
                 document.querySelectorAll('input[name="delivery-payment"]').forEach(input => {
                     input.disabled = false;
                     input.parentElement.style.display = '';
+                    input.checked = false;
                 });
             }
         });
@@ -359,14 +361,9 @@ function validateForm() {
     }
 
     // Validar método de pago
-    let paymentGroup = null;
-    if (deliveryType === 'pickup') {
-        paymentGroup = document.querySelector('#pickup-fields .form-group label[for="delivery-payment"]')?.parentElement;
-    } else if (deliveryType === 'delivery') {
-        paymentGroup = document.querySelector('#delivery-fields .form-group label[for="delivery-payment"]')?.parentElement;
-    }
     const paymentSelected = form.querySelector('input[name="delivery-payment"]:checked');
-    if (!paymentSelected && paymentGroup) {
+    if (!paymentSelected) {
+        const paymentGroup = document.querySelector('.form-group:nth-child(3)');
         paymentGroup.classList.add('invalid');
         const errorMsg = document.createElement('div');
         errorMsg.className = 'error-message';
