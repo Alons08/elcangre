@@ -111,15 +111,45 @@ function setupDeliveryToggle() {
                 setTimeout(() => {
                     cartElements.pickupFields.scrollIntoView({ behavior: 'smooth', block: 'end' });
                 }, 100);
+                // Habilitar todos los métodos de pago
+                document.querySelectorAll('input[name="delivery-payment"]').forEach(input => {
+                    input.disabled = false;
+                    input.parentElement.style.display = '';
+                });
             } else if (deliveryType === 'delivery') {
                 cartElements.deliveryFields.classList.add('active');
                 setTimeout(() => {
                     cartElements.deliveryFields.scrollIntoView({ behavior: 'smooth', block: 'end' });
                 }, 100);
+                // Solo permitir Yape para delivery
+                document.querySelectorAll('input[name="delivery-payment"]').forEach(input => {
+                    if (input.value !== 'Yape') {
+                        input.disabled = true;
+                        input.checked = false;
+                        input.parentElement.style.display = 'none';
+                    } else {
+                        input.disabled = false;
+                        input.parentElement.style.display = '';
+                    }
+                });
+            } else {
+                // Si no hay selección, mostrar todos los métodos
+                document.querySelectorAll('input[name="delivery-payment"]').forEach(input => {
+                    input.disabled = false;
+                    input.parentElement.style.display = '';
+                });
             }
         });
     }
 }
+
+// Al cargar la página, aplicar la restricción si ya hay un valor seleccionado
+document.addEventListener('DOMContentLoaded', function() {
+    if (cartElements.deliveryType) {
+        const event = new Event('change');
+        cartElements.deliveryType.dispatchEvent(event);
+    }
+});
     let eventsConfigured = false;
 
     function setupCartEvents() {
@@ -423,7 +453,7 @@ function submitOrder() {
     }
 
     // Construir mensaje para WhatsApp
-    let message = `¡Hola Los Gemelos! Quiero realizar el siguiente pedido:\n\n`;
+    let message = `¡Hola El Cangre! Quiero realizar el siguiente pedido:\n\n`;
     message += `*DATOS DEL CLIENTE*\n`;
     message += `🙍‍♂️ *Nombre:* ${customerName}\n`;
     message += `📞 *Teléfono:* ${customerPhone}\n`;
