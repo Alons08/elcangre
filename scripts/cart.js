@@ -121,8 +121,8 @@ function setupDeliveryToggle() {
                 setTimeout(() => {
                     cartElements.deliveryFields.scrollIntoView({ behavior: 'smooth', block: 'end' });
                 }, 100);
-                // Solo permitir Yape para delivery
-                document.querySelectorAll('input[name="delivery-payment"]').forEach(input => {
+                // Solo permitir Yape para delivery y seleccionarlo por defecto
+                document.querySelectorAll('#delivery-fields input[name="delivery-payment"]').forEach(input => {
                     if (input.value !== 'Yape') {
                         input.disabled = true;
                         input.checked = false;
@@ -130,6 +130,7 @@ function setupDeliveryToggle() {
                     } else {
                         input.disabled = false;
                         input.parentElement.style.display = '';
+                        input.checked = true;
                     }
                 });
             } else {
@@ -358,9 +359,14 @@ function validateForm() {
     }
 
     // Validar método de pago
+    let paymentGroup = null;
+    if (deliveryType === 'pickup') {
+        paymentGroup = document.querySelector('#pickup-fields .form-group label[for="delivery-payment"]')?.parentElement;
+    } else if (deliveryType === 'delivery') {
+        paymentGroup = document.querySelector('#delivery-fields .form-group label[for="delivery-payment"]')?.parentElement;
+    }
     const paymentSelected = form.querySelector('input[name="delivery-payment"]:checked');
-    if (!paymentSelected) {
-        const paymentGroup = document.querySelector('.form-group:nth-child(3)');
+    if (!paymentSelected && paymentGroup) {
         paymentGroup.classList.add('invalid');
         const errorMsg = document.createElement('div');
         errorMsg.className = 'error-message';
