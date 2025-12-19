@@ -27,8 +27,8 @@ const products = [
     // Ceviches
     {id: 100, name: "Ceviche de pescado natural personal", category: "ceviches", price: 28, description: "Ceviche de pescado fresco.", image: "./images/menu/ceviche-pescado.jpg", available: true},
     {id: 21, name: "Ceviche de pescado natural fuente", category: "ceviches", price: 55, description: "Ceviche de pescado fresco, fuente.", image: "./images/menu/ceviche-pescado.jpg", available: true},
-    {id: 22, name: "Ceviche mixto en crema de rocoto personal", category: "ceviches", price: 36, description: "Ceviche mixto con crema de rocoto.", image: "./images/menu/ceviche-mixto-rocot.jpg", available: true},
-    {id: 25, name: "Ceviche mixto en crema de rocoto fuente", category: "ceviches", price: 70, description: "Ceviche mixto con crema de rocoto fuente.", image: "./images/menu/ceviche-mixto-rocot.jpg", available: true},
+    {id: 22, name: "Ceviche mixto en crema de rocoto personal", category: "ceviches", price: 36, description: "Ceviche mixto con crema de rocoto.", image: "./images/menu/ceviche-mixto-rocoto.jpg", available: true},
+    {id: 25, name: "Ceviche mixto en crema de rocoto fuente", category: "ceviches", price: 70, description: "Ceviche mixto con crema de rocoto fuente.", image: "./images/menu/ceviche-mixto-rocoto.jpg", available: true},
     {id: 23, name: "Ceviche mixto natural personal", category: "ceviches", price: 30, description: "Ceviche mixto clásico personal.", image: "./images/menu/ceviche-mixto.jpg", available: true},
     {id: 24, name: "Ceviche mixto natural fuente", category: "ceviches", price: 60, description: "Ceviche mixto clásico fuente.", image: "./images/menu/ceviche-mixto.jpg", available: true},
     {id: 26, name: "Ceviche mixto en leche de tigre personal", category: "ceviches", price: 33, description: "Ceviche mixto en leche de tigre.", image: "./images/menu/ceviche-mixto-tigre.jpg", available: true},
