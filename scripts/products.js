@@ -17,7 +17,7 @@ const products = [
     {id: 12, name: "Taypa", category: "bebidas", price: 4, description: "Bebida refrescante tradicional.", image: "./images/menu/taypa.jpg", available: true},
     {id: 13, name: "Cerveza Trigo", category: "bebidas", price: 10, description: "Cerveza de trigo bien fría.", image: "./images/menu/cerveza-cusquena-trigo.jpg", available: true},
     {id: 14, name: "Cerveza Negra", category: "bebidas", price: 10, description: "Cerveza negra nacional.", image: "./images/menu/cerveza-cusquena-negra.jpg", available: true},
-    {id: 15, name: "Cerveza Trujillo", category: "bebidas", price: 8, description: "Cerveza Trujillo tradicional.", image: "./images/menu/cerveza-trujillo.jpg", available: true},
+    {id: 15, name: "Cerveza Trujillo", category: "bebidas", price: 9, description: "Cerveza Trujillo tradicional.", image: "./images/menu/cerveza-trujillo.jpg", available: true},
     {id: 16, name: "Chicha morada 500ml", category: "bebidas", price: 5, description: "Chicha morada natural 500ml.", image: "./images/menu/chicha-morada.jpg", available: true},
     {id: 17, name: "Chicha morada 1L", category: "bebidas", price: 10, description: "Chicha morada natural 1L.", image: "./images/menu/chicha-morada.jpg", available: true},
     {id: 18, name: "Gaseosa Inka cola 1L", category: "bebidas", price: 8, description: "Inka Kola 1L fría.", image: "./images/menu/gaseosa-inca-1lt.jpg", available: true},
